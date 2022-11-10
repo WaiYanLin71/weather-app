@@ -12,15 +12,15 @@ jobs:
           arguments: |
             --acl public-read \
             --cache-control "max-age=86400"
-          aws-access-key-id: AKIAZ6ZFKG2JZNEBRVXF
-          aws-region: ap-northeast-1
-          aws-secret-access-key: 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
+          aws-access-key-id: "AKIAZ6ZFKG2JZNEBRVXF"
+          aws-region: "ap-northeast-1"
+          aws-secret-access-key: "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"
           from: bucket
           to: 's3://lpcustomizer-dev/test'
-#       - aws-s3/copy:
-#           arguments: '--dryrun'
-#           from: bucket/build_asset.txt
-#           to: 's3://lpcustomizer-dev
+      - aws-s3/copy:
+          arguments: '--dryrun'
+          from: bucket/build_asset.txt
+          to: 's3://lpcustomizer-dev
 workflows:
   s3-example:
     jobs:
