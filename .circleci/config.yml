@@ -11,7 +11,7 @@ jobs:
       - aws-s3/sync:
           arguments: |
             --request-payer requester 
-            --acl public-read \
+            --acl public-read 
             --cache-control "max-age=86400"
           aws-access-key-id: AWS_ACCESS_KEY_ID_BLUE
           aws-region: AWS_REGION_BLUE
