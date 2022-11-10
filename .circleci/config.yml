@@ -21,7 +21,3 @@ jobs:
           arguments: '--dryrun'
           from: bucket/build_asset.txt
           to: 's3://lpcustomizer-dev'
-workflows:
-  s3-example:
-    jobs:
-      - build
