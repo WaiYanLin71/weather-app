@@ -20,7 +20,7 @@ jobs:
       - aws-s3/copy:
           arguments: '--dryrun'
           from: bucket/build_asset.txt
-          to: 's3://s3-ap-northeast-1.amazonaws.com/lpcustomizer-dev'
+          to: 's3://lpcustomizer-dev'
 workflows:
   s3-example:
     jobs:
